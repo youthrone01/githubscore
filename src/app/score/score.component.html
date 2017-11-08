@@ -1,0 +1,8 @@
+<div>
+  <div *ngIf="newscore.score != null">
+    <h1>Your Score: {{newscore.score}}</h1>
+    <h1>{{newscore.message}}</h1>
+  </div>
+  <h1 *ngIf="newscore.score == null">{{newscore.message}}</h1>
+
+</div>

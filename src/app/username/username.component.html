@@ -1,0 +1,9 @@
+<div>
+  <form #formData = "ngForm" (submit)= "OnSubmit()">
+    <label>
+      Github Username:<input type="text" name="username" required [(ngModel)]="username" #name = "ngModel">
+      {{name.errors |json}}      
+    </label>
+    <input type="submit" [disabled]='!formData.valid'>
+  </form>
+</div>
